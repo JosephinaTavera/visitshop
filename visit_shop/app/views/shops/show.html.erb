@@ -1,0 +1,16 @@
+<h1> <%= @shop.shop_name %> Show page </h1>
+
+<h3>Address</h3>
+
+<h3> 
+		<%= @shop.address_1 %>
+		<%= @shop.state %> 
+		<%= @shop.zipcode %>
+</h3>
+
+<%= link_to "Edit #{@shop.shop_name}", edit_shops_path(@shop) %>
+<br>
+<%= link_to "Delete", shop_path(@shop), method: :delete, data: { confirm: 'Are you sure?' }
+%>
+</br>
+<%= link_to "Back to all shops", shops_path %>
