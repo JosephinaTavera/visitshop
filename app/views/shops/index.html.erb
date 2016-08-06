@@ -1,14 +1,15 @@
-<h1> Index page </h1>
+<h1> Let's Visit these Shops </h1>
 
 <% @shop.each do |f| %>
 
 <ul>
 	<li>
 		<a href='/shops/<%=f.id%>'> <%= f.shop_name%>
-		<%= f.address_1 %>
-		<%= f.state %> 
-		<%= f.zipcode %>
+		<%= f.full_address %>
 	</li>
 </ul>
 
 <% end %>
+
+</br>
+<%= link_to "Add New Shop", shops_new_path %>

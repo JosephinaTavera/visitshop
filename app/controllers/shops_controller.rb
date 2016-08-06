@@ -40,10 +40,10 @@ class ShopsController < ApplicationController
 		redirect_to shops_path
 	end
 
-
+	
 	private
 	def shop_params
-		params.require(:shop).permit(:shop_name, :address_1, :address_2, :city, :state, :zipcode)
+		params.require(:shop).permit(:shop_name, :full_address, :latitude, :longitude)
 	end
 
 end

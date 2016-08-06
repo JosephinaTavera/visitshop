@@ -17,11 +17,9 @@ ActiveRecord::Schema.define(version: 20160731220429) do
 
   create_table "shops", force: :cascade do |t|
     t.string "shop_name"
-    t.string "address_1"
-    t.string "address_2"
-    t.string "city"
-    t.string "state"
-    t.string "zipcode"
+    t.string "full_address"
+    t.float  "latitude"
+    t.float  "longitude"
   end
 
 end
