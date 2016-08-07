@@ -51,4 +51,6 @@ gem 'gmaps4rails'
 
 gem 'geocoder'
 
+gem 'materialize-sass'
+
 ruby "2.3.0"

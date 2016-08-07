@@ -1,4 +1,25 @@
-<h1> Edit page </h1>
+<nav class="grey darken-4" role="navigation">
+  <div class="nav-wrapper container">
+    <%= link_to "Shop Visitor", root_path, { :class=>"brand-logo" } %>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/shops">HOME</a></li>
+      <!-- <li><a href="">New Artist</a></li>
+      <li><a href="">About</a></li> -->
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="/shops">HOME</a></li>
+      <!-- <li><a href="">New Artist</a></li>
+      <li><a href="">About</a></li> -->
+    </ul>
+  </div>
+</nav>
+
+<div class="container">  <!-- for materialize -->
+   <div class="col s12">  <!-- for materialize -->
+
+
+<h1> Edit Shop Information </h1>
 
 <%= form_for @shop do |f| %>
 

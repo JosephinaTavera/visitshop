@@ -1,3 +1,22 @@
+<nav class="grey darken-4" role="navigation">
+  <div class="nav-wrapper container">
+    <%= link_to "Shop Visitor", root_path, { :class=>"brand-logo" } %>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><%= link_to "Add New Shop", shops_new_path %></li>
+    
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><%= link_to "Add New Shop", shops_new_path %></li>
+ 
+    </ul>
+  </div>
+</nav>
+
+<div class="container">  <!-- for materialize -->
+   <div class="col s12">  <!-- for materialize -->
+
+
 <h1> Let's Visit these Shops </h1>
 
 <% @shop.each do |f| %>
@@ -11,5 +30,6 @@
 
 <% end %>
 
-</br>
-<%= link_to "Add New Shop", shops_new_path %>
+</div>
+</div>
+
