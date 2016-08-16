@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+vine = ActiveSupport::JSON.decode(File.read(‘../Desktop/sampleissue1989’))
+
+vine.each do |a| Comic.create!(:image => a‘image['medium_url']’], :name => a‘name’],)
+	 end
